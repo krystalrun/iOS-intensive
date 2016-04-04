@@ -2,8 +2,8 @@
 //  main2.m
 //  Day2_OOPSObjectiveC
 //
-//  Created by Peiran Hu on 3/22/16.
-//  Copyright © 2016 Peiran Hu. All rights reserved.
+//  Created by Emily Hu on 3/22/16.
+//  Copyright © 2016 Emily Hu. All rights reserved.
 //
 
 //
