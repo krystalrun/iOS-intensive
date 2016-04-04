@@ -2,7 +2,7 @@
 //  main2.h
 //  Day2_OOPSObjectiveC
 //
-//  Created by Peiran Hu on 3/22/16.
+//  Created by Emily Hu on 3/22/16.
 //  Copyright © 2016 Peiran Hu. All rights reserved.
 //
 
