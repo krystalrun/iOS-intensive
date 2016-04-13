@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vwl-sF-JdG">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NUA-JM-Dk5">
+                                <rect key="frame" x="62" y="212" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchBtn_Tapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="pJx-yt-Spw"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyR-5V-R0u">
+                                <rect key="frame" x="186" y="217" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mLu-B7-61H">
+                                <rect key="frame" x="143" y="344" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchBtnActivityIndicator_Tapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="o3y-xE-ioJ"/>
+                                </connections>
+                            </switch>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Maf-wj-K9N">
+                                <rect key="frame" x="143" y="276" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" stepValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ed8-FB-LrS">
+                                <rect key="frame" x="98" y="407" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="qNa-5j-bh4"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zG9-bh-uRM">
+                                <rect key="frame" x="213" y="411" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Cel-TN-0E6">
+                                <rect key="frame" x="85" y="95" width="150" height="2"/>
+                            </progressView>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYx-gS-UWd">
+                                <rect key="frame" x="205" y="121" width="46" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="StartResetBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="flB-IK-o8k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmT-Re-ocV">
+                                <rect key="frame" x="65" y="121" width="46" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="StartResetBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mpO-fL-DNO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59172556558239875" green="0.9975131871513756" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="ji9-8s-XaT">
+                        <barButtonItem key="leftBarButtonItem" title="Left" id="q1w-c9-D2U">
+                            <connections>
+                                <action selector="btnBarLeft_pressed:" destination="BYZ-38-t0r" id="h5I-Pp-SDk"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="lGL-cm-RS9">
+                            <connections>
+                                <action selector="btnBarRight_pressed:" destination="BYZ-38-t0r" id="qcw-3p-qOu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="activity" destination="Maf-wj-K9N" id="f94-Y8-HBh"/>
+                        <outlet property="lblStepperValue" destination="zG9-bh-uRM" id="QdZ-kr-Iff"/>
+                        <outlet property="lblText" destination="nyR-5V-R0u" id="qKv-Uv-9j7"/>
+                        <outlet property="progressView" destination="Cel-TN-0E6" id="m4N-9u-XQd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668" y="983"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4pa-AZ-TP7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vwl-sF-JdG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kk8-vH-sVQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ehc-ol-IMd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g6a-Rt-x4N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="989"/>
+        </scene>
+    </scenes>
+</document>
